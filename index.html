@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletricista Profissional</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 24px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .service {
+            background: white;
+            padding: 15px;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .service h3 {
+            color: black;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact a {
+            background: #25D366;
+            color: white;
+            padding: 15px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .contact a svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        footer {
+            background-color: #004aad;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header {
+                font-size: 20px;
+            }
+            .container {
+                width: 95%;
+            }
+            .service {
+                width: 90%;
+            }
+            .contact a {
+                padding: 12px 15px;
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+                padding: 10px;
+            }
+            .service {
+                width: 100%;
+            }
+            .contact a {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://imgur.com/a/ykD1t0Y" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;">
+        Eletricista Roque
+    </header>
+
+    <div class="container">
+        <h2>Serviços Oferecidos</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Instalações Elétricas</h3>
+                <p>Realizamos instalações seguras para sua casa ou empresa.</p>
+            </div>
+            <div class="service">
+                <h3>Manutenção</h3>
+                <p>Diagnóstico e reparos rápidos para evitar problemas elétricos.</p>
+            </div>
+            <div class="service">
+                <h3>Troca de Fiação</h3>
+                <p>Substituição de fiação antiga para maior segurança.</p>
+            </div>
+            <div class="service">
+                <h3>AR-Condicionado</h3>
+                <p>Realizamos instalação, Limpeza, Troca e Manutenção.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h2>Entre em Contato</h2>
+            <a href="https://wa.me/seunumero">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.069.528 4.043 1.528 5.795L0 24l6.363-1.497A11.972 11.972 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm6.018 16.818c-.253.71-1.252 1.382-2.025 1.382-.774 0-1.526-.253-2.278-.505-.993-.38-1.985-.76-2.903-1.366-1.78-1.128-3.31-2.657-4.436-4.436-.606-.918-.987-1.91-1.367-2.903-.252-.752-.504-1.504-.504-2.278 0-.773.671-1.772 1.381-2.025.671-.253 1.545-.127 2.016.253.886.633 1.518 1.39 2.015 2.278.38.671.127 1.39-.252 1.772l-.633.633c-.253.253-.38.506-.127.885.38.506.811.987 1.263 1.39.505.38 1.012.76 1.517 1.139.38.253.76.127 1.012-.127l.506-.506c.38-.38 1.012-.633 1.645-.38.886.38 1.772.76 2.403 1.39.38.38.507.887.38 1.39z"/>
+                </svg>
+                Fale pelo WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Eletricista Profissional - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
