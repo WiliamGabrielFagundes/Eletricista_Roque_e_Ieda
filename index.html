@@ -24,7 +24,7 @@
             text-align: center;
             padding: 15px;
             font-size: 24px;
-            box-shadow: 0 0 20px #00cfff, 0 0 40px #00cfff88;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5);
         }
 
         .container {
@@ -49,17 +49,21 @@
 
         .service {
             background: #111111;
-            /* preto um pouco mais claro */
             padding: 15px;
             width: 100%;
             max-width: 300px;
-            border-radius: 8px;
+            border-radius: 10px;
             border: 2px solid #00cfff;
-            /* neon blue (Sky Blue) */
-            box-shadow: 0 0 10px #00cfff88;
-            /* efeito neon suave */
+            box-shadow:
+                0 10px 20px rgba(0, 0, 0, 0.6),
+                0 0 15px #00cfff55;
             text-align: center;
             color: #cccccc;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
         }
 
         .service h3 {
@@ -72,16 +76,30 @@
         }
 
         .contact a {
-            background: #25D366;
+            background: green;
             color: white;
             padding: 15px 20px;
             font-size: 18px;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 8px;
             display: inline-flex;
             align-items: center;
             gap: 10px;
             font-weight: bold;
+            border: 2px solid #00ff7f;
+            box-shadow:
+                0 8px 15px rgba(0, 0, 0, 0.5),
+                0 0 10px #00ff7f,
+                0 0 20px #00ff7f88;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+        }
+
+        .contact a:hover {
+            transform: scale(1.05);
+            box-shadow:
+                0 10px 25px rgba(0, 0, 0, 0.6),
+                0 0 20px #00ff7f,
+                0 0 30px #00ff7f88;
         }
 
         .contact a svg {
@@ -142,7 +160,7 @@
 <body>
 
     <header>
-        <!-- <img src="/Logo.png" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;"> -->
+        <!-- <img src="./Logo.png" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;"> -->
         Eletricista Roque & Ieda
     </header>
 
