@@ -108,6 +108,43 @@
             fill: white;
         }
 
+        /*div copy-container*/
+        .copy-container {
+            display: flex;
+            /* align-items: center; */
+            gap: 10px;
+            margin: 20px;
+            margin-left: 450px;
+        }
+
+        .copy-container input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #00cfff;
+            background-color: #111;
+            color: #ccc;
+            width: 250px;
+            box-shadow: 0 0 10px #00cfff55;
+        }
+
+        .copy-container button {
+            padding: 10px 15px;
+            background-color: #00cfff;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00cfff88;
+            transition: transform 0.2s;
+        }
+
+        .copy-container button:hover {
+            transform: scale(1.05);
+        }
+
+        /*div copy-container*/
+
         footer {
             background-color: #00cfff;
             color: #000;
@@ -195,7 +232,24 @@
                 Fale pelo WhatsApp
             </a>
         </div>
+
+        <div class="copy-container">
+            <input type="text" id="copyText" value="+5551999463926" readonly>
+            <button onclick="copiarTexto()">Copiar</button>
+        </div>
     </div>
+
+    <!-- div copy-container -->
+        <script>
+            function copiarTexto() {
+                const texto = document.getElementById("copyText");
+                texto.select();
+                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+                document.execCommand("copy");
+                alert("Texto copiado: " + texto.value);
+            }
+        </script>
+    <!-- div copy-container -->
 
     <footer>
         &copy; 2025 Eletricista Roque & Ieda &reg; - Todos os direitos reservados.
