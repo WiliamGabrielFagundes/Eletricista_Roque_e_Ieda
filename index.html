@@ -34,6 +34,12 @@
             padding: 20px;
         }
 
+        a {
+            text-decoration: none;
+            color: inherit;
+            color: black;
+        }
+
         h2 {
             text-align: center;
             margin-bottom: 20px;
@@ -68,6 +74,11 @@
 
         .service h3 {
             color: #00cfff;
+        }
+
+        .foto {
+            width: 270px;
+            height: 280px;
         }
 
         .contact {
@@ -195,9 +206,8 @@
 </head>
 
 <body>
-
     <header>
-       <img src="./Logo.png" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;">
+        <img src="./Logo.png" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;">
         Eletricista Roque & Ieda
     </header>
 
@@ -205,19 +215,21 @@
         <h2>Serviços Oferecidos</h2>
         <div class="services">
             <div class="service">
-                <h3>Instalações Elétricas</h3>
+                <a href="./paginas/intalacoes.html">
+                    <h3>Instalações Elétricas</h3>
+                </a>
                 <p>Realizamos instalações seguras para sua casa ou empresa.</p>
             </div>
             <div class="service">
-                <h3>Manutenção</h3>
-                <p>Diagnóstico e reparos rápidos para evitar problemas elétricos.</p>
+                <a href="./paginas/Manutencao.html">
+                    <h3>Manutenção</h3>
+                </a>
+                <p>Diagnóstico e reparos para evitar problemas elétricos.</p>
             </div>
             <div class="service">
-                <h3>Troca de Fiação</h3>
-                <p>Substituição de fiação antiga para maior segurança.</p>
-            </div>
-            <div class="service">
-                <h3>AR-Condicionado</h3>
+                <a href="./paginas/ar.html">
+                    <h3>AR-Condicionado</h3>
+                </a>
                 <p>Realizamos instalação, Limpeza, Troca e Manutenção.</p>
             </div>
         </div>
@@ -232,37 +244,39 @@
                 Fale pelo WhatsApp
             </a>
         </div>
+
         <div class="copy-container">
             <h1>Roque:</h1>
             <input type="text" id="copyText" value="+555199463926" readonly>
             <button onclick="copiarTexto()">Copiar</button>
         </div>
+
         <div class="copy-container">
-            <label style="color: #000;">.......</label><h1>Ieda:</h1>
+            <label style="color: #000;">.......</label>
+            <h1>Ieda:</h1>
             <input type="text" id="copyText2" value="+55519790-7883" readonly>
             <button onclick="copiarTexto()">Copiar</button>
         </div>
     </div>
 
-    <!-- div copy-container -->
-        <script>
-            function copiarTexto() {
-                const texto = document.getElementById("copyText");
-                texto.select();
-                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
-                document.execCommand("copy");
-                alert("Texto copiado: " + texto.value);
-            }
-            function copiarTexto() {
-                const texto = document.getElementById("copyText2");
-                texto.select();
-                texto.setSelectionRange(0, 99999); // Para dispositivos móveis
-                document.execCommand("copy");
-                alert("Texto copiado: " + texto.value);
-            }
-        </script>
-        
-    <!-- div copy-container -->
+    <script>
+        // div copy-container
+        function copiarTexto() {
+            const texto = document.getElementById("copyText");
+            texto.select();
+            texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+            document.execCommand("copy");
+            alert("Texto copiado: " + texto.value);
+        }
+        function copiarTexto() {
+            const texto = document.getElementById("copyText2");
+            texto.select();
+            texto.setSelectionRange(0, 99999); // Para dispositivos móveis
+            document.execCommand("copy");
+            alert("Texto copiado: " + texto.value);
+        }
+        // div copy-container
+    </script>
 
     <footer>
         &copy; 2025 Eletricista Roque & Ieda &reg; - Todos os direitos reservados.
