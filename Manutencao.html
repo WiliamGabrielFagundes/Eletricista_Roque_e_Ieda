@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página em Construção</title>
+    <link rel="icon" type="image/png" href="img/poste-de-utilidade2.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #00ccff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #00ccff;
+            color: #000;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            box-shadow: 0 0 15px #00ccff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 10px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #00ccff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            color: black;
+        }
+        
+        .dots {
+            display: inline-block;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0 2px;
+            background-color: #00ccff;
+            border-radius: 50%;
+            animation: bounce 1.2s infinite ease-in-out;
+        }
+
+        .dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        footer {
+            background-color: #00ccff;
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            box-shadow: 0 0 15px #00ccff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+       <a href="./index.html" rel="prev"><img src="./img/Logo.png" alt="Logo Eletricista Roque" style="height: 50px; vertical-align: middle;">
+            Eletricista Roque & Ieda</a>
+    </header>
+
+    <main>
+        <h1>
+            DESCULPE, AINDA ESTAMOS CRIANDO ESSA PÁGINA
+            <span class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </span>
+        </h1>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eletricista Roque & Ieda &reg; - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
