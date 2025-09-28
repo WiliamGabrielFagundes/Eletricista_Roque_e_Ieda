@@ -1,0 +1,259 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #cccccc;
+}
+
+header {
+    background-color: #00cfff;
+    color: #000;
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.5);
+}
+
+h1{
+    padding: 15px;
+    font-size: 14px;
+}
+
+.si{
+    background-color: #ffffff66;
+    font-size: 14px;
+    width: 260px;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+    border-radius: 10px;
+    border: 2px solid #00cfff;
+}
+
+.dots {
+    display: inline-block;
+}
+
+.dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #00ccff;
+    border-radius: 50%;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.service {
+    background: #111111;
+    padding: 15px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    border: 2px solid #00cfff;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.6),
+        0 0 15px #00cfff55;
+    text-align: center;
+    color: #cccccc;
+    transition: transform 0.2s ease-in-out;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    color: #00cfff;
+}
+
+.foto {
+    width: 270px;
+    height: 280px;
+}
+
+.contact {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact a {
+    background: green;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    border: 2px solid #00ff7f;
+    box-shadow:
+        0 8px 15px rgba(0, 0, 0, 0.5),
+        0 0 10px #00ff7f,
+        0 0 20px #00ff7f88;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.contact a:hover {
+    transform: scale(1.05);
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.6),
+        0 0 20px #00ff7f,
+        0 0 30px #00ff7f88;
+}
+
+.contact a svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+/*div copy-container*/
+.copy-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin: 2px;
+}
+
+.copy-container input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00cfff;
+    background-color: #111;
+    color: #ccc;
+    width: 250px;
+    box-shadow: 0 0 10px #00cfff55;
+}
+
+.copy-container button {
+    padding: 10px 15px;
+    background-color: #00cfff;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00cfff88;
+    transition: transform 0.2s;
+}
+
+.copy-container button:hover {
+    transform: scale(1.05);
+}
+
+#mapa{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    padding: auto;
+}
+
+/*div copy-container*/
+
+footer {
+    background-color: #00cfff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #00cfff, 0 0 30px #00cfff88;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .service {
+        width: 90%;
+    }
+
+    .contact a {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .contact a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
